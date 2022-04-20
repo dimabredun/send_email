@@ -2,10 +2,10 @@
 
 class User
 {
-    public string $name;
-    public ?string $email ;
-    public ?string $deviceId;
-    public int $emailsReceived = 0;
+    private ?string $name;
+    private ?string $email ;
+    private ?string $deviceId;
+    private int $emailsReceived = 0;
 
     public function __construct(string $name = '', string $email ='', string $deviceId = '')
     {
